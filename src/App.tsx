@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/question/Nav';
-import Question from './pages/Question';
+import Nav from './components/question_detail/Nav';
+import Question_Detail from './components/question_detail/Question_Detail';
+
 
 function App() {
   return (
     <div className="App">
-      <Question/>
+      <Question_Detail/>
     </div>
   );
 }
