@@ -1,6 +1,6 @@
 import React from "react";
 import {FaFacebook } from 'react-icons/fa';
-import { ReactComponent as GoogleIcon } from '../assets/GoogleIcon.svg';
+import { ReactComponent as GoogleIcon } from '../assets/Login/GoogleIcon.svg';
 
 function Login() {
     return (
