@@ -1,13 +1,13 @@
-import React from 'react';
 import './App.css';
-import Nav from './components/question_detail/Nav';
-import Question_Detail from './components/question_detail/Question_Detail';
+import QuestionDetail from './page/QuestionDetailPage';
+import QuestionPage from './page/QuestionPage';
 
 
 function App() {
   return (
     <div className="App">
-      <Question_Detail/>
+      <QuestionPage/>
+      <QuestionDetail/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowReturnRight, BsEnvelope, BsReply, BsSearch, BsSearchHeart } from 'react-icons/bs'
+import { BsArrowReturnRight, BsReply, BsSearch, } from 'react-icons/bs'
 const Detail = () => {
   return (
     <div className="max-w-2xl mx-auto bg-red-50 p-6 rounded-2xl shadow-lg my-5 font-zain text-start">
