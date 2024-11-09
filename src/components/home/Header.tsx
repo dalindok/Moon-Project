@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/moon.png'
+import image from '../../assets/home/moon.png'
 
 function header() {
     return (

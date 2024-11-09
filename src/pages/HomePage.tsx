@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Board from '../components/Board';
-import CoreValue from '../components/CoreValue';
-import Search from '../components/Search';
-import NewActicle from '../components/NewActicle';
+import Header from '../components/home/Header';
+import Board from '../components/home/Board';
+import CoreValue from '../components/home/CoreValue';
+import Search from '../components/home/Search';
+import NewActicle from '../components/home/NewActicle';
 
 function Homepage() {
     return (
