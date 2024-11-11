@@ -5,7 +5,7 @@ import { ReactComponent as GoogleIcon } from '../assets/Login/GoogleIcon.svg';
 function Login() {
     return (
       <div>
-        <div className="bg-customPink rounded-md p-8 w-96 mr-auto ml-auto font-zain">
+        <div className="bg-customPink rounded-md p-8 w-96 mt-3 mr-auto ml-auto font-zain">
           <div className="bg-white rounded-md p-8"> 
             <div className="my-3">
             <p className="text-black font-bold text-center text-6xl">Login</p>
