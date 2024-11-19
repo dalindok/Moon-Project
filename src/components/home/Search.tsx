@@ -16,9 +16,9 @@ function Search() {
           value={searchTerm}
           onChange={handleChange}
           placeholder="Search..."
-          className="w-full bg-white bg-opacity-80 p-4 pl-10 rounded-md shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-pink-400 hover:shadow-lg" // Added hover and focus styles
+          className="w-full bg-white bg-opacity-80 p-4 pl-10 rounded-md shadow-md transition-all font-zain duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-customPink hover:shadow-lg" // Added hover and focus styles
         />
-        <BiSearchAlt className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl text-pink-200" />
+        <BiSearchAlt className="absolute left-3 top-1/2 transform -translate-y-1/2 text-xl font-zain text-customPink" />
       </div>
     </div>
   );
