@@ -1,9 +1,9 @@
-import Nav from '../components/question/Nav'
+import Nav from '../components/Nav'
 import Hero from '../components/question/Hero'
 import Search from '../components/question/Search'
-import AllQ from '../components/question/All_Q'
+import AllQ from '../components/question/AllQ'
 import PostCard from '../components/question/PostCard'
-import Footer from '../components/question/Footer'
+import Footer from '../components/Footer'
 const QuestionPage = () => {
   return (
     <div>

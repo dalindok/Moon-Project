@@ -1,5 +1,5 @@
-import Nav from '../components/question_detail/Nav'
-import Footer from '../components/question_detail/Footer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import Detail from '../components/question_detail/Detail'
 
 const QuestionDetailPage = () => {
