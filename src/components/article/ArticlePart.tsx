@@ -8,7 +8,7 @@ function ArticlePart() {
                 <img src={logo} alt="Profile" className="w-7 h-7 md:w-10 md:h-10 rounded-full" />
                 <div className="flex flex-row items-center">
                     <p className="font-bold text-sm md:text-base">Nita12</p>
-                    <p className="font-thin ml-3 text-thinGray text-xs md:text-sm">4 hrs ago</p>
+                    <p className="font-thin ml-3 text-gray-500 text-xs md:text-sm">4 hrs ago</p>
                 </div>
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-4 text-start">
@@ -29,7 +29,7 @@ function ArticlePart() {
                     is oily, dry, combination, or sensitive is essential for choosing the right products.
                 </p>
             </div>
-        </div>
+        </div> 
     );
 }
 
