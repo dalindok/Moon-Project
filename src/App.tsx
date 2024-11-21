@@ -1,13 +1,15 @@
 import './App.css';
-import QuestionDetail from './page/QuestionDetailPage';
-import QuestionPage from './page/QuestionPage';
-
+import QuestionDetail from './pages/QuestionDetailPage';
+import QuestionPage from './pages/QuestionPage';
+import HomePage from '../src/pages/HomePage';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <QuestionPage/>
       <QuestionDetail/>
+      <HomePage/>
     </div>
   );
 }

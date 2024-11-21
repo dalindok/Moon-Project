@@ -4,6 +4,7 @@ import Search from '../components/question/Search'
 import AllQ from '../components/question/AllQ'
 import PostCard from '../components/question/PostCard'
 import Footer from '../components/Footer'
+import React from 'react'
 const QuestionPage = () => {
   return (
     <div>

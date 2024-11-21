@@ -1,3 +1,4 @@
+import React from 'react'
 import { BsArrowReturnRight, BsReply, BsSearch, } from 'react-icons/bs'
 const Detail = () => {
   return (

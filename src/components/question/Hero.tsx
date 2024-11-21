@@ -1,3 +1,4 @@
+import React from 'react'
 import head from '../../assets/imgs/head.png'
 import logo from '../../assets/imgs/logo.png'
 const Hero = () => {
