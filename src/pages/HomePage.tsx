@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/home/Header';
-import Board from '../components/home/Board';
 import CoreValue from '../components/home/CoreValue';
 import NewActicle from '../components/home/NewActicle';
 import Nav from '../components/Nav';

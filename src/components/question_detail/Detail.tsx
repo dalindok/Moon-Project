@@ -44,7 +44,7 @@ const Detail = () => {
               the right products. Do you know how to identify your skin type?
             </p>
             <button className="text-customPink font-semibold mt-2 flex items-center space-x-1">
-              <BsReply className="text-sm" /> <span>Reply</span>
+              <BsReply className="text-base" /> <span>Reply</span>
             </button>
 
             {/* Reply to Comment */}
@@ -60,7 +60,7 @@ const Detail = () => {
                   choosing the right products.
                 </p>
                 <button className="text-customPink font-semibold mt-2 flex items-center space-x-1">
-                  <BsReply className="text-sm" /> <span>Reply</span>
+                  <BsReply className="text-base" /> <span>Reply</span>
                 </button>
               </div>
             </div>

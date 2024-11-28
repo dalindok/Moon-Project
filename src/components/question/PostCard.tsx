@@ -26,7 +26,7 @@ const PostCard = () => {
               </h2>
 
               {/* Post Content */}
-              <p className="text-gray-700 mt-1 text-start pt-2 text-base sm:text-lg font-light">
+              <p className="text-gray-700 mt-1 text-start pt-2 text-base sm:text-xl font-light">
                 Understanding whether your skin is oily, dry, combination, or
                 sensitive is essential for choosing the right products. Do you
                 know how to identify your skin type? Understanding whether your
