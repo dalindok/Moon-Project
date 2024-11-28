@@ -6,6 +6,7 @@ import React from 'react';
 import './App.css';
 import Aboutus from './pages/Aboutus';
 import Article from './pages/Article';
+import SearchPage from './pages/search/SearchPage';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Aboutus/>
       <QuestionPage/>
       <QuestionDetail/>
+      <SearchPage />
+
     </div>
   );
 }

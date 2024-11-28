@@ -9,6 +9,7 @@ module.exports = {
       zain: ['Zain', 'sans-serif'], // Add fallback font family if needed
     },
   },
+
   },
   plugins: [],
 }
