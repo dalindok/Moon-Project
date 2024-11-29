@@ -6,7 +6,7 @@ import Detail from '../components/profile/Detail';
 
 function Homepage() {
     return (
-        <div>
+        <div className='w-80 h-96 sm:w-96 sm:h-1/2'>
         <Board/>
         <Detail/>
         </div>

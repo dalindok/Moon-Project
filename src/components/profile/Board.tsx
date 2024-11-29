@@ -1,17 +1,15 @@
 import React from "react";
-import makeup from "../../assets/home/girl.png";
+import profile from "../../assets/profile/Profile.png";
 
 function Board() {
   return (
-    <div className="bg-customPink font-zain justify-between flex flex-row self-center">
-      <img src={makeup} alt="logo page" className="sm:w-80 sm:h-80 w- rounded-full ml-20" />
-      <div className="flex flex-col mr-28 mt-20">
-        <p className="justify-start font-bold text-3xl">Moon</p>
-        <div className="text-xl w-40 sm:w-full">
-          <p>"Your trusted space to learn, connect, and transform</p>
-          <p>your skincare routine, one step at a time."</p>
-        </div>
-      </div>
+    <div className="flex flex-col items-center justify-center bg-customPink font-zain">
+      <img
+        src={profile}
+        alt="user profile"
+        className="w-32 h-32 rounded-full shadow-sm mt-10"
+      />
+      <p className="text-3xl font-bold m-5">Chom Thonita</p>
     </div>
   );
 }
