@@ -7,6 +7,7 @@ import './App.css';
 import Aboutus from './pages/Aboutus';
 import Article from './pages/Article';
 import SearchPage from './pages/search/SearchPage';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <QuestionPage/>
       <QuestionDetail/>
       <SearchPage />
-
+      <Login/>
     </div>
   );
 }
