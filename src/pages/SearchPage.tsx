@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleCard from '../../components/search/ArticleCard';
+import ArticleCard from '../components/search/ArticleCard';
 // import card from '../../assets/search/card.png';
 import { FaSearch, FaChevronLeft, FaTimes } from 'react-icons/fa';
 

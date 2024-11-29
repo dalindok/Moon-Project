@@ -13,7 +13,7 @@ function Board() {
 
   return (
     <div className="flex flex-col items-center justify-center bg-customPink font-zain">
-      <button className="absolute top-8 left-8">
+      <button className="absolute left-8">
         <GoChevronLeft className="text-3xl" />
       </button>
       <img
