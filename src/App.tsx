@@ -1,7 +1,9 @@
 import './App.css';
+
 import QuestionDetail from './pages/QuestionDetailPage';
 import QuestionPage from './pages/QuestionPage';
 import HomePage from '../src/pages/HomePage';
+import EditProfile from './pages/EditProfile';
 import React from 'react';
 import './App.css';
 import Aboutus from './pages/Aboutus';
@@ -19,6 +21,7 @@ function App() {
       <QuestionDetail/>
       <SearchPage />
       <Login/>
+      <EditProfile/>
     </div>
   );
 }
