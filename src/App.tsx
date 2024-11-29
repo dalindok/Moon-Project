@@ -10,6 +10,7 @@ import Aboutus from './pages/Aboutus';
 import Article from './pages/Article';
 import SearchPage from './pages/search/SearchPage';
 import Login from './pages/Login';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <SearchPage />
       <Login/>
       <EditProfile/>
+      <Profile/>
     </div>
   );
 }

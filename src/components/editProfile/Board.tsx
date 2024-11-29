@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Profile from "../../assets/editProfile/Profile.png";
+import Profile from "../../assets/profile/Profile.png";
 import { GoChevronLeft } from "react-icons/go";
 
 function Board() {
