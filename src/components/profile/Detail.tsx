@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewArticle() {
+function Detail() {
   return (
     <div className="flex flex-col items-center justify-center font-zain">
       <div className="mt-10 text-lg">
@@ -29,4 +29,4 @@ function NewArticle() {
     </div>
   );
 }
-export default NewArticle;
+export default Detail;
