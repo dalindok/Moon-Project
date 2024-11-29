@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Profile from "../../assets/editProfile/Profile.png";
+import { GoChevronLeft } from "react-icons/go";
 
 function Board() {
   // State to manage the name input
@@ -12,13 +13,14 @@ function Board() {
 
   return (
     <div className="flex flex-col items-center justify-center bg-customPink font-zain">
-      {/* Profile Image */}
+      <button className="absolute top-8 left-8">
+        <GoChevronLeft className="text-3xl" />
+      </button>
       <img
         src={Profile}
         alt="user profile"
         className="w-32 h-32 rounded-full shadow-sm mt-10"
       />
-      {/* Name Input */}
       <div className="flex mt-5 mb-5 items-center">
         <p className="text-xl w-32 text-slate-400">Name</p>
         <input
