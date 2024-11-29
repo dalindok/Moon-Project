@@ -1,11 +1,11 @@
 import './App.css';
-import HomePage from './pages/EditProfile';
+import EditProfile from './pages/EditProfile';
 import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
+      <EditProfile/>
     </div>
   );
 }

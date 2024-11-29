@@ -4,13 +4,13 @@ import Detail from '../components/editProfile/Detail'
 
 
 
-function Homepage() {
+function EditProfile() {
     return (
-        <div className=''>
+        <div>
         <Board/>
         <Detail/>
         </div>
     );
 }
 
-export default Homepage;
+export default EditProfile;
