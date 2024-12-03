@@ -5,7 +5,7 @@ const OurMission = () => {
     return (
         <section className="flex flex-col items-center py-10 px-4 sm:px-6 md:px-12 ">
             {/* Centered Heading */}
-            <h2 className="text-6xl sm:text-4xl md:text-6xl font-bold text-center mb-8 pt-8">
+            <h2 className="text-5xl sm:text-3xl md:text-5xl font-bold text-center mb-8 pt-8">
                 <span className="text-black">Our</span> <span className="text-rose-300">Mission</span>
             </h2>
 
@@ -24,7 +24,7 @@ const OurMission = () => {
                 {/* Text box section */}
                 <div className="md:w-2/3 max-w-lg md:max-w-2xl px-4 sm:px-6 md:px-8 flex flex-col items-center md:items-start p-10">
                     <div className="border-4 border-rose-300 rounded-lg p-6 mt-6 bg-white shadow-md w-full md:w-[95%] lg:w-[110%] xl:w-[120%] text-center md:text-left">
-                        <p className="text-gray-700 text-base sm:text-md md:text-lg lg:text-xl xl:text-2xl leading-relaxed p-3">
+                        <p className="text-gray-700 text-base sm:text-md md:text-lg lg:text-lg xl:text-xl leading-relaxed p-3">
                             Our mission is to create a supportive community where 
                             skincare enthusiasts can connect, share, and learn. We 
                             empower users to discuss and recommend skincare tips, 

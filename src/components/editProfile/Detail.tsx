@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Detail() {
+  const navigation = useNavigate();
   // State for form inputs
   const [profile, setProfile] = useState({
     username: "@Thonita123",
@@ -71,6 +73,12 @@ function Detail() {
 
       {/* Submit Button */}
       <div className="flex justify-center mt-8">
+        <button
+          onClick={() => navigation("/")}
+          className="font-semibold text-lg bg-slate-200 hover:bg-red-100 hover:text-white py-2 px-6 rounded-lg mb-3"
+        >
+          Back to Home
+        </button>
         <button
           className="font-semibold text-lg bg-customPink hover:bg-red-100 hover:text-white py-2 px-6 rounded-lg mb-3"
           onClick={() => alert(`Profile updated: ${JSON.stringify(profile)}`)}
