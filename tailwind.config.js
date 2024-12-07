@@ -4,14 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-
-      customPink: '#f4c5c2',
+        customPink: "#f4c5c2",
+      },
+      fontFamily: {
+        zain: ["Zain", "sans-serif"], // Add fallback font family if needed
+      },
     },
-    fontFamily: {
-      zain: ['Zain', 'sans-serif'], // Add fallback font family if needed
-    },
-  },
   },
   plugins: [],
-}
-
+};

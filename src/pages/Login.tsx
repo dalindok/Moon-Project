@@ -11,10 +11,10 @@ function Login() {
             <p className="text-black font-bold text-center text-6xl">Login</p>
           </div>
           <form className="flex flex-col gap-2 my-9">
-            <p className="text-start font-semibold">Username</p>
+            <p className="text-start font-semibold">Email</p>
             <input
               type="Text"
-              placeholder="Type your username"
+              placeholder="Type your email"
               className="rounded-xl px-3 py-3 placeholder:text-base bg-gray-100 text-gray-700"
             />
             <p className="text-start font-semibold">Password</p>

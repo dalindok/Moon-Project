@@ -3,13 +3,18 @@ import ArticlePart from "../components/article/ArticlePart";
 import { GoChevronLeft } from "react-icons/go";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import articleData from "../temp/Article";
 
-function Article() {
+const Article = () => {
   const navigation = useNavigate();
   const handleGoBack = () => {
     navigation(-1);
   };
+  const param = useParams();
+  const id = param.id;
+  const detail = articleData.find((item) => item.id == Number(id));
+  console.log(detail);
   return (
     <div>
       <Nav />
@@ -20,11 +25,19 @@ function Article() {
         >
           <GoChevronLeft className="text-4xl mr-2 mt-8" />
         </button>
-        <ArticlePart />
+        {detail != null && (
+          <ArticlePart
+            date={detail.date}
+            img={detail.img}
+            title={detail.title}
+            shortdescription={detail.shortdescription}
+            description={detail.description}
+          />
+        )}
       </div>
       <Footer />
     </div>
   );
-}
+};
 
 export default Article;

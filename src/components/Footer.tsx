@@ -15,14 +15,20 @@ const Footer = () => {
           <div className="flex flex-col">
             <div className="flex flex-row">
               <a
-                onClick={() => navigation("/about")}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  navigation("/about");
+                }}
                 href="#about"
                 className="text-gray-700 p-3 sm:p-5 sm:text-base text-sm"
               >
                 About
               </a>
               <a
-                onClick={() => navigation("/questionPage")}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  navigation("/questionPage");
+                }}
                 href="#qa"
                 className="text-gray-700 p-3 sm:p-5"
               >

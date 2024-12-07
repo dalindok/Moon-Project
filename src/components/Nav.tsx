@@ -10,8 +10,8 @@ const Nav = () => {
   const menu = [
     { page: "Home", link: "/" },
     { page: "About", link: "/about" },
-    { page: "Q&As", link: "/questionPage" },
-    { page: "Profile", link: "/profile" },
+    // { page: "Q&As", link: "/questionPage" },
+    // { page: "Profile", link: "/profile" },
   ];
   return (
     <div className="px-5 justify-between flex sm:px-20 lg:px-10 shadow-lg sticky h-[80px]">

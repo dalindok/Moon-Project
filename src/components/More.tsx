@@ -6,7 +6,10 @@ const More = () => {
   return (
     <div className="flex justify-center mt-8">
       <button
-        onClick={() => navigation("/articleList")}
+        onClick={() => {
+          window.scrollTo(0, 0);
+          navigation("/articleList");
+        }}
         className="font-bold text-xl bg-customPink hover:bg-red-100 hover:text-white py-2 px-6 rounded-lg mb-3"
       >
         More

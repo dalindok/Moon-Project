@@ -13,19 +13,20 @@ import ArticleList from "../pages/ArticleList";
 import Ask from "../pages/Ask";
 
 const RouteNavigation = () => {
+  // const scrollRestoration = ScrollRestoration();
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/article" element={<Article />} />
+      <Route path="/article-detail/:id" element={<Article />} />
       <Route path="/about" element={<Aboutus />} />
-      <Route path="/questionPage" element={<QuestionPage />} />
-      <Route path="/questionDetail" element={<QuestionDetailPage />} />
+      {/* <Route path="/questionPage" element={<QuestionPage />} /> */}
+      {/* <Route path="/questionDetail" element={<QuestionDetailPage />} /> */}
       <Route path="/searchPage" element={<SearchPage />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/editProfile" element={<EditProfile />} />
-      <Route path="/profile" element={<Profile />} />
+      {/* <Route path="/login" element={<Login />} /> */}
+      {/* <Route path="/editProfile" element={<EditProfile />} /> */}
+      {/* <Route path="/profile" element={<Profile />} /> */}
       <Route path="/articleList" element={<ArticleList />} />
-      <Route path="/ask" element={<Ask />} />
+      {/* <Route path="/ask" element={<Ask />} /> */}
       {/* <Route path="*" element={<PageNotFound />} /> */}
     </Routes>
   );
