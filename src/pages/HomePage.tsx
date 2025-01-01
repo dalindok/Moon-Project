@@ -1,21 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CoreValue from "../components/home/CoreValue";
 import NewActicle from "../components/home/NewActicle";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Hero from "../components/question/Hero";
 import Search from "../components/question/Search";
-import More from "../components/More";
+import { ArticleI } from "../interface/articles";
 
 function Homepage() {
+  const [articles, setArticles] = useState<ArticleI[]>([]);
+  // state that use to get of articles to home page
+  const [loading, setLoading] = useState<boolean>(true);
+  // state that use to get loading
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  // use effect run firstly when start in homepage
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/dalindok/Moon-Project/refs/heads/development/src/temp/Article.json"
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      setArticles(data.article);
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+  // fetch api (get data from api)
+
   return (
     <div>
       <Nav />
       <Hero />
-      <CoreValue />
+      {/* <CoreValue /> */}
       <Search />
-      <NewActicle />
-      <More />
+      {loading && <div>Loading...</div>}
+      {error && <div>Error: {error}</div>}
+      {articles.length > 0 && <NewActicle data={articles} />}
+      {/* there is props data in NewAricle*/}
       <Footer />
     </div>
   );

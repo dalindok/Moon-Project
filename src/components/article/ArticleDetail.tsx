@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "../../assets/imgs/logo.png";
+// import logo from "../../assets/imgs/logo.png";
 interface Props {
   date: string;
   img: string;
   title: string;
-  shortdescription: string;
   description: string;
 }
 
-const ArticlePart = (props: Props) => {
+const ArticleDetail = (props: Props) => {
   return (
     <div className="bg-red-50 rounded-lg p-6 m-5 max-w-2xl mx-auto mt-1 shadow-lg md:p-8 lg:max-w-4xl">
       <div className="flex items-center space-x-3 mb-4">
@@ -35,10 +34,10 @@ const ArticlePart = (props: Props) => {
         />
       </div>
       <div className="space-y-4 text-start text-lg md:text-2xl">
-        <p>{props.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: props.description }} />
       </div>
     </div>
   );
 };
 
-export default ArticlePart;
+export default ArticleDetail;

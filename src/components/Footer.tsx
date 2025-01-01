@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigation = useNavigate();
   return (
-    <div className="bg-gray-100 py-1 px-2 sm:py-4 sm:px-8">
+    <div className="bg-gray-100 mt-10 py-1 px-2 sm:py-4 sm:px-8">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <img
