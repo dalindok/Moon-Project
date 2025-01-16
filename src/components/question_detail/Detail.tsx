@@ -2,6 +2,8 @@ import React from "react";
 import { BsArrowReturnRight, BsReply, BsSearch } from "react-icons/bs";
 import { GoChevronLeft } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/imgs/logo.png";
+
 const Detail = () => {
   const navigation = useNavigate();
   return (
@@ -14,20 +16,16 @@ const Detail = () => {
       </button>
       {/* Main Post */}
       <div className="flex items-start space-x-4 mb-5">
-        <img
-          src="https://via.placeholder.com/50"
-          alt="Profile"
-          className="w-12 h-12 rounded-full"
-        />
+        <img src={logo} alt="Profile" className="w-12 h-12 rounded-full" />
         <div>
           <div className="flex items-center space-x-2">
             <span className="font-bold text-gray-900">Nita12</span>
             <span className="text-gray-500 text-sm">4 hr. ago</span>
           </div>
-          <h2 className="font-bold text-xl mt-2 text-gray-800">
+          <h2 className="font-bold text-2xl mt-2 text-gray-800">
             What’s your skin type, and how do you determine it?
           </h2>
-          <p className="text-gray-700 mt-1">
+          <p className="text-gray-700 mt-1 text-xl">
             Understanding whether your skin is oily, dry, combination, or
             sensitive is essential for choosing the right products. Do you know
             how to identify your skin type? Understanding whether your skin is
@@ -60,10 +58,10 @@ const Detail = () => {
           />
           <div>
             <div className="flex items-center space-x-2">
-              <span className="font-bold text-gray-900">Lili</span>
+              <span className="font-bold text-gray-900 text-xl">Lili</span>
               <span className="text-gray-500 text-sm">4 hr. ago</span>
             </div>
-            <p className="text-gray-700 mt-1">
+            <p className="text-gray-700 mt-1 text-xl">
               Understanding whether your skin is oily, dry, combination, or
               sensitive is essential for choosing the right products. Do you
               know how to identify your skin type?
@@ -77,10 +75,10 @@ const Detail = () => {
               <BsArrowReturnRight className="text-gray-500 mt-2" />
               <div>
                 <div className="flex items-center space-x-2">
-                  <span className="font-bold text-gray-900">Lili</span>
+                  <span className="font-bold text-gray-900 text-xl">Lili</span>
                   <span className="text-gray-500 text-sm">4 hr. ago</span>
                 </div>
-                <p className="text-gray-700 mt-1">
+                <p className="text-gray-700 mt-1 text-xl">
                   Understanding whether your skin is oily, dry, combination, or
                   sensitive is essential for choosing the right products.
                 </p>
@@ -101,10 +99,10 @@ const Detail = () => {
           />
           <div>
             <div className="flex items-center space-x-2">
-              <span className="font-bold text-gray-900">Lili</span>
+              <span className="font-bold text-gray-900 text-xl">Lili</span>
               <span className="text-gray-500 text-sm">4 hr. ago</span>
             </div>
-            <p className="text-gray-700 mt-1">
+            <p className="text-gray-700 mt-1 text-xl">
               Understanding whether your skin is oily, dry, combination, or
               sensitive is essential for choosing the right products.
             </p>

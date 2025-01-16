@@ -15,6 +15,7 @@ const ArticleDetailPage = () => {
   };
 
   const param = useParams();
+  // take id to take each article
   const [articleDetail, setArticleDetail] = useState<ArticleI | null>();
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState(null);

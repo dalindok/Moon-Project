@@ -1,6 +1,7 @@
 import React from "react";
 import { BsEnvelope } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/imgs/logo.png";
 
 const PostCard = () => {
   const navigation = useNavigate();
@@ -9,11 +10,7 @@ const PostCard = () => {
       <div className="w-3/4 sm:w-3/4  p-6 bg-red-50 rounded-2xl shadow-md mx-auto my-7 font-zain text-start">
         <div className="flex items-start justify-start space-x-4">
           {/* Profile Image */}
-          <img
-            src="https://via.placeholder.com/50"
-            alt="Profile"
-            className="w-12 h-12 rounded-full"
-          />
+          <img src={logo} alt="Profile" className="w-12 h-12 rounded-full" />
           <div>
             {/* Username and Time */}
             <div className="flex items-center space-x-2 pt-1 sm:pt-3 ">

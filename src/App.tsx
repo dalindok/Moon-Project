@@ -11,7 +11,6 @@ function App() {
       duration: 1200,
     });
   }, []);
-
   return <RouteNavigation />;
 }
 

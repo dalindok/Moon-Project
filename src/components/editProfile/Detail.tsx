@@ -72,7 +72,7 @@ function Detail() {
       </div>
 
       {/* Submit Button */}
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 space-x-6">
         <button
           onClick={() => navigation("/")}
           className="font-semibold text-lg bg-slate-200 hover:bg-red-100 hover:text-white py-2 px-6 rounded-lg mb-3"
