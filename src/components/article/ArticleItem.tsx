@@ -15,7 +15,7 @@ const ArticleItem = (props: { item: ArticleI }) => {
         onNavigateArticleDetail(props.item.id);
       }}
       key={props.item.id}
-      className="shadow-xl hover:shadow-slate-400 flex flex-col w-full h-[350px] m-auto rounded-lg"
+      className="shadow-xl hover:shadow-slate-400 flex flex-col w-full h-[350px] m-auto rounded-lg overflow-hidden"
     >
       <img
         src={props.item.img}

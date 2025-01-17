@@ -17,6 +17,7 @@ const ArticleDetailPage = () => {
   const param = useParams();
   // take id to take each article
   const [articleDetail, setArticleDetail] = useState<ArticleI | null>();
+  //<ArticleI | null> can be null or can have interface
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState(null);
 
@@ -29,7 +30,6 @@ const ArticleDetailPage = () => {
       const response = await fetch(
         "https://raw.githubusercontent.com/dalindok/Moon-Project/refs/heads/development/src/temp/Article.json"
       );
-
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -69,7 +69,9 @@ const ArticleDetailPage = () => {
             description={articleDetail.description}
           />
         ) : (
-          <Lottie animationData={No_data} loop={true} />
+          <div className="w-full flex items-center justify-center">
+            <Lottie animationData={No_data} loop={true} className="w-1/2" />
+          </div>
         )}
       </div>
       <Footer />

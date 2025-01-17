@@ -27,7 +27,10 @@ function Homepage() {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
+      // console.log("what response do?", response);
       const data = await response.json();
+      // response.json() to get the whole json data
+      // in order to get data as array instead of whole json data we must access(.) it with article
       setArticles(data.article);
     } catch (err: any) {
       setError(err.message);
@@ -41,11 +44,12 @@ function Homepage() {
     <div>
       <Nav />
       <Hero />
-      {/* <CoreValue /> */}
+      <CoreValue />
       <Search />
       {loading && <div>Loading...</div>}
       {error && <div>Error: {error}</div>}
       {articles.length > 0 && <NewActicle data={articles} />}
+      {/* .length check if article empty or not */}
       {/* there is props data in NewAricle*/}
       <Footer />
     </div>
