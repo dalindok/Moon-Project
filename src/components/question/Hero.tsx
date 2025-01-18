@@ -3,7 +3,7 @@ import head from "../../assets/imgs/head.png";
 import logo from "../../assets/imgs/logo.png";
 const Hero = () => {
   return (
-    <div className=" justify-between flex sm:p-12 p-5 bg-red-50">
+    <div className="w-full justify-between flex sm:p-12 p-5 bg-red-50">
       <img
         data-aos="fade-right"
         className="w-1/4 sm:ml-28 lg:ml-5 ml-8"
