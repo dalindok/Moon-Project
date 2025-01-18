@@ -3,29 +3,27 @@ import head from "../../assets/imgs/head.png";
 import logo from "../../assets/imgs/logo.png";
 const Hero = () => {
   return (
-    <div className="w-full justify-between flex sm:p-12 p-5 bg-red-50">
+    <div className="w-full justify-between flex flex-col items-center sm:flex-row sm:p-12 p-5 bg-red-50">
       <img
         data-aos="fade-right"
-        className="w-1/4 sm:ml-28 lg:ml-5 ml-8"
+        className="sm:w-1/4 w-1/3 sm:ml-8"
         src={head}
         alt="Hero Img"
       />
       <div
         data-aos="fade-left"
-        className="font-zain flex items-center flex-col sm:pt-10 lg:pr-36 pr-12 pt-5"
+        className="font-zain flex items-center justify-center text-center flex-col pt-10 md:pr-36 sm:pr-24"
       >
         {/* <p className='text-9xl font-bold pb-2 text-customPink'>Moon</p> */}
         <img
-          className="lg:w-[300px] lg:h-[150px] sm:w-[150px] sm:h-[80px] object-cover w-[100px] h-[50px]"
+          className=" object-cover w-[100px] h-[50px]"
           src={logo}
           alt="moon"
         />
-        <p className="sm:text-2xl text-sm">
+        <p className="text-2xl">
           "Your trusted space to learn, connect, and transform{" "}
         </p>
-        <p className="sm:text-2xl text-sm">
-          your skincare routine, one step at a time."
-        </p>
+        <p className="text-2xl ">your skincare routine, one step at a time."</p>
       </div>
     </div>
   );

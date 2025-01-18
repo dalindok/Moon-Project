@@ -30,7 +30,7 @@ const Footer = () => {
                   navigation("/questionPage");
                 }}
                 href="#qa"
-                className="text-gray-700 p-3 sm:p-5"
+                className="text-gray-700 p-2 sm:p-4"
               >
                 Q & A
               </a>
