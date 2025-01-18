@@ -51,48 +51,44 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="flex items-center flex-col p-4 mx-auto ">
+    <div className="flex items-center flex-col p-0 sm:p-4 sm:mx-auto mx-0">
       {/* Header with Back Button, Search Input, and Icons */}
-      <div className="flex items-center justify-between mb-6 ">
-        <button className="text-2xl font-semibold pr-10">
+      <div className="flex items-center m-6">
+        <button>
           <FaChevronLeft
             onClick={() => {
               navigation(-1);
             }}
-            className="h-6 w-6 "
+            className=""
           />
         </button>
-
-        <div className="relative">
-          {/* Search input with icon */}
+        <div className="relative mx-3 sm:mx-6">
           <input
             value={searchQuery}
             autoFocus
             onChange={handleSearch}
             type="text"
             placeholder="Search"
-            className="w-full bg-gray-100 rounded-full px-60 py-2 pl-10 outline-none"
+            className="w-full bg-gray-100 rounded-full py-2 pl-10 outline-none"
           />
-          <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+          <div className="absolute top-3 left-2">
             <FaSearch className="h-5 w-5 text-gray-500" />
           </div>
         </div>
 
-        <div className="flex text-2xl pl-10">
-          <button className="flex">
-            <FaTimes
-              className="h-6 w-6 "
-              onClick={() => {
-                setSearchQuery("");
-              }}
-            />
-          </button>
-        </div>
+        <button>
+          <FaTimes
+            className="h-6 w-6 "
+            onClick={() => {
+              setSearchQuery("");
+            }}
+          />
+        </button>
       </div>
       {loading && <div>Loading...</div>}
       {error && <div>Error: {error}</div>}
       {searchQuery.trim().length === 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {articles.slice(0, 3).map((item) => (
             <ArticleItem item={item} />
           ))}

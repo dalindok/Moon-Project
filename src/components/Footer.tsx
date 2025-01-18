@@ -13,14 +13,14 @@ const Footer = () => {
             alt="moon"
           />
           <div className="flex flex-col">
-            <div className="flex flex-row">
+            <div className="flex flex-col sm:flex-row ">
               <a
                 onClick={() => {
                   window.scrollTo(0, 0);
                   navigation("/about");
                 }}
                 href="#about"
-                className="text-gray-700 p-3 sm:p-5 sm:text-base text-sm"
+                className="text-gray-700 p-2 sm:p-4 sm:text-base text-sm"
               >
                 About
               </a>
@@ -35,9 +35,6 @@ const Footer = () => {
                 Q & A
               </a>
             </div>
-            <p className="text-gray-700 sm:text-sm sm:pl-5 text-xs">
-              @ 2024 WingedLetter, All rights reserved
-            </p>
           </div>
         </div>
         <div className="text-gray-700 sm:text-base text-sm">
