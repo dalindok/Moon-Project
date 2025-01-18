@@ -20,7 +20,7 @@ const Footer = () => {
                   navigation("/about");
                 }}
                 href="#about"
-                className="text-gray-700 p-2 sm:p-4 sm:text-base text-sm"
+                className="text-gray-700 p-2 sm:p-4 sm:text-base text-xs"
               >
                 About
               </a>
@@ -30,14 +30,14 @@ const Footer = () => {
                   navigation("/questionPage");
                 }}
                 href="#qa"
-                className="text-gray-700 p-2 sm:p-4"
+                className="text-gray-700 p-2 sm:p-4 sm:text-base text-xs"
               >
                 Q & A
               </a>
             </div>
           </div>
         </div>
-        <div className="text-gray-700 sm:text-base text-sm">
+        <div className="text-gray-700 sm:text-base text-xs">
           Support: dalindok211@gmail.com
         </div>
       </div>

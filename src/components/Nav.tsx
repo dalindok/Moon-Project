@@ -20,7 +20,7 @@ const Nav = () => {
         src={logo}
         alt="Logo"
       />
-      <div className="font-zain flex font-bold px-0 text-[20px] sm:px-10 lg:text-[25px]">
+      <div className="font-zain flex font-bold px-0 text-[12px] sm:px-10 lg:text-[25px]">
         {menu.map((item, index) => {
           return (
             <button
